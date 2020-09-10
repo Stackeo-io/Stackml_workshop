@@ -1,0 +1,24 @@
+name: continuous_integration
+
+on: [push, pull_request]
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        strategy:
+            matrix:
+                python-version: [3.6, 3.7, 3.8]
+
+        steps:
+            -   uses: actions/checkout@v2
+
+            -   name: Set up Python ${{ matrix.python-version }}
+                uses: actions/setup-python@v2
+
+            -   name: install pipenv package manager
+                run: |
+                    sudo pip install pipenv
+                    pipenv install
+
+            - name: validate the StackMl configuration File
+              run: .workspace/bin/test
