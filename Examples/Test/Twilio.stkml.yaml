@@ -1,7 +1,7 @@
 modeldef:
     NodeModels:
         - id: Twilio
-          type: WANNode
+          type: NetworkNode
           NetworklayerElement:
             - ElementType: Hub
             - ComponentId: SFR_LTE-M
