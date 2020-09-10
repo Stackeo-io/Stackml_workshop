@@ -1,2 +1,8 @@
 image:
     file: .gitpod.Dockerfile
+
+tasks:
+    - command: python -m http.server 8000
+
+ports:
+    - port: 8000
