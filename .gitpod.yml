@@ -1,5 +1,5 @@
 image:
-    file: .gitpod.Dockerfile
+    file: .workspace/.gitpod.Dockerfile
 
 tasks:
     - command: python -m http.server 8000
