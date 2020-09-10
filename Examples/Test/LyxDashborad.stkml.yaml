@@ -1,7 +1,7 @@
 ---
 modeldef:
-    - Node:
-        id: Dashboard
+    NodeModels:
+      - id: Dashboard
         type: ApplicationNode
         NetworklayerElement:
             - ElementType: Hub

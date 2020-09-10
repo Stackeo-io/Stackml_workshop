@@ -1,7 +1,7 @@
 ---
 modeldef:
-    - Node:
-          id: IoTHub
+    NodeMdels:
+        - id: IoTHub
           type: CloudNode
           NetworklayerElement:
               - ElementType: Hub

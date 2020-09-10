@@ -1,7 +1,7 @@
 ---
 modeldef:
-  - Node:
-      id: Lyra
+  NodeModels:
+    - id: Lyra
       type: ThingNode
       EnergylayerElement:
         - ComponentId: lyraPower

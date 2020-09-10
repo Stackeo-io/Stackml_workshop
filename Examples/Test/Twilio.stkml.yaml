@@ -1,6 +1,6 @@
 modeldef:
-    - Node:
-          id: Twilio
+    NodeModels:
+        - id: Twilio
           type: WANNode
           NetworklayerElement:
             - ElementType: Hub

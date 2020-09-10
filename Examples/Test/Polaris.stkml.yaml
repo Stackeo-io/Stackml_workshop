@@ -1,7 +1,7 @@
 ---
 modeldef:
-  - Node:
-      id: Polaris
+  NodeModels:
+    - id: Polaris
       type: EdgeNode
 
       EnergylayerElement:
