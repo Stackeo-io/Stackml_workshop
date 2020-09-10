@@ -1,0 +1,86 @@
+---
+modeldef:
+  - Node:
+      id: Lyra
+      type: ThingNode
+      EnergylayerElement:
+        - ComponentId: lyraPower
+          nature: Hardware
+          power:
+            input:
+              type: battery
+
+      PhysicallayerElement:
+        - ComponentId: LyraHardware
+          nature: Hardware
+          cpu:
+            manaufacturer: ARM
+            nbCores: 1
+            busSize: 32
+            frequency: 32
+            version: STM32L152RET6
+          ram:
+            type: slot
+            size:
+              unit: KB
+              value: 80
+          os:
+            name: LX OS
+          dimension:
+            unit: mm
+            length: 16.5
+            width: 62.5
+            height: 4
+
+        - ComponentId: CoreSensor
+          nature: Hardware
+          Sensor:
+            - name: LXSensorArray
+              type:
+                - Temperature
+                - Light
+                - Motion
+                - Gyroscope
+                - Humidity
+                - Magnetometer
+                - AirPresure
+
+      NetworklayerElement:
+        - ElementType: EndPoint
+        - ComponentId: LyraBle
+          nature: Hardware
+          type: BLE
+
+      ConnectivitylayerElement:
+        - ElementType: EndPoint
+        - ComponentId: LyraSSL
+          nature: Software
+          protocol:
+            name: TLS
+            version: 1.0.0
+
+      DatalayerElement:
+        - ElementType: EndPoint
+        - ComponentId: LyraDataCollect
+          nature: Software
+          Workflow:
+            - JobId: CollectPossition
+              Args:
+                - name: arg1
+                  type: In
+                  data:
+                    size:
+                      value: 50
+                      unit: B
+                    type: Stream
+            - JobId: SendPossition
+              prec: CollectPossition
+              Args:
+                - name: arg1
+                  type: Out
+                  data:
+                    size:
+                      value: 50
+                      unit: B
+                    type: Stream
+      documentation: https://lx-group.com.au/iot-cores/#tabllink-2

@@ -1,0 +1,75 @@
+---
+modeldef:
+  - Node:
+      id: Polaris
+      type: EdgeNode
+
+      EnergylayerElement:
+        - ComponentId: polarisEnergy
+          nature: Hardware
+          power:
+            input:
+              type: wired
+              voltage: 12
+              amperage: 2
+
+      PhysicallayerElement:
+        - ComponentId: polarisHardware
+          nature: Hardware
+          cpu:
+            manaufacturer: ARM
+            nbCores: 1
+            busSize: 32
+            frequency: 80
+            version: STM32L452VE
+          operatingTemp:
+            unit: C
+            max: 85
+            min: 40
+
+      NetworklayerElement:
+        - ElementType: Hub
+        - ComponentId: polarisBLE
+          nature: Hardware
+          type: BLE
+
+        - ComponentId: polarisLTE-M
+          type: Hardware
+          nature: LTE-CatM
+
+      ConnectivitylayerElement:
+        - ElementType: Hub
+        - ComponentId: polarisSSL
+          nature: Software
+          protocol:
+            name: TLS
+            version: 1.0.0
+        - ComponentId: polarisTwilio
+          nature: service
+          protocol:
+            name: SSL
+            version: 1.0.0
+      MessaginglayerElement:
+        - ElementType: EndPoint
+        - ComponentId: polarisBrocker
+          nature: Software
+          pattern: Publisher-Subscriber
+          protocol:
+            name: MQTT
+            version: 1.4.0
+
+      DatalayerElement:
+        - ElementType: EndPoint
+        - ComponentId: polarisProcess
+          nature: Software
+          Workflow:
+            - JobId: polarisProcess1
+              Args:
+                - name: arg1
+                  type: In
+                  data:
+                    size:
+                      value: 50
+                      unit: B
+                    type: Stream
+      documentation: https://fortebit.tech/docs/manuals/polaris/

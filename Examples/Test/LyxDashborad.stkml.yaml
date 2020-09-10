@@ -1,0 +1,16 @@
+---
+modeldef:
+    - Node:
+        id: Dashboard
+        type: ApplicationNode
+        NetworklayerElement:
+            - ElementType: Hub
+            - ComponentId: App-Connection
+              nature: Hardware
+        DatalayerElement:
+          - ElementType: EndPoint
+          - ComponentId: LX-DashboardAppData
+            nature: Software
+        ServicelayerElement:
+          - ComponentId: LX-DasboardAPPService
+            nature: Service

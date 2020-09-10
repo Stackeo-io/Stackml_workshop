@@ -1,0 +1,14 @@
+modeldef:
+    - Node:
+          id: Twilio
+          type: WANNode
+          NetworklayerElement:
+            - ElementType: Hub
+            - ComponentId: SFR_LTE-M
+              nature: Hardware
+            - ComponentId: SFR-Aws
+              nature: Hardware
+          ConnectivitylayerElement:
+              - ElementType: Hub
+              - ComponentId: twlilioHub
+                nature: Service

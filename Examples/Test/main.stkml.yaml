@@ -1,0 +1,114 @@
+---
+import:
+    - Lyra
+    - Polaris
+    - Twilio
+    - AwsIoT
+    - LyxDashborad
+
+topology:
+    name: Bricoloc
+    useCase: Tracking
+    Nodes:
+        - id: lyra
+          model: Lyra.Lyra
+          tier: Thing
+          cardinality: 1500
+
+        - id: polaris
+          model: Polaris.Polaris
+          tier: Edge
+          cardinality: 300
+
+        - id: twilio
+          model: Twilio.Twilio
+          tier: Network
+          cardinality: 1
+
+        - id: IoTHub
+          model: AwsIoT.IoTHub
+          tier: Platform
+          cardinality: 1
+
+        - id: Lx-Dashboard
+          model: LyxDashborad.Dashboard
+          tier: Application
+          cardinality: 1
+
+    Links:
+        #Network Layer
+        #Thing To Edge
+        -   source: lyra
+            sink: polaris
+            layer: Network
+
+        #Edge To WAN
+        -   source: polaris
+            sink: twilio
+            layer: Network
+
+        #WAN To Platform
+        -   source: twilio
+            sink: IoTHub
+            layer: Network
+
+        #Platform To Application
+        -   source: IoTHub
+            sink: Lx-Dashboard
+            layer: Network
+
+        #Connectivity Layer
+        #Thing To Edge
+        -   source: lyra
+            sink: polaris
+            layer: Connectivity
+
+        #Edge To WAN
+        -   source: polaris
+            sink: twilio
+            layer: Connectivity
+
+        #WAN To Platform
+        -   source: twilio
+            sink: IoTHub
+            layer: Connectivity
+
+        #Messaging Layer
+        #Edge To Platform
+        -   source: polaris
+            sink: IoTHub
+            layer: Messaging
+
+        #Data Layer
+        #Thing To Edge
+        -   source: lyra
+            sink: polaris
+            layer: Data
+
+        #Edge To Platform
+        -   source: twilio
+            sink: IoTHub
+            layer: Data
+
+        #Platform To Application
+        -   source: IoTHub
+            sink: Lx-Dashboard
+            layer: Data
+
+        #Service Layer
+        #Platform To Application
+        -   source: IoTHub
+            sink: Lx-Dashboard
+            layer: Data
+
+    Regions:
+        - name: Paris
+          type: city
+          NodePopulation:
+            - nodeId: lyra
+              number: 3
+        - name: Lyon
+          type: city
+          NodePopulation:
+            - nodeId: polaris
+              number: 5
