@@ -86,7 +86,7 @@ topology:
             layer: Data
 
         #Edge To Platform
-        -   source: twilio
+        -   source: ploaris
             sink: IoTHub
             layer: Data
 
@@ -102,13 +102,90 @@ topology:
             layer: Data
 
     Regions:
-        - name: Paris
-          type: city
-          NodePopulation:
-            - nodeId: lyra
-              number: 3
         - name: Lyon
           type: city
           NodePopulation:
+            - nodeId: lyra
+              number: 200
             - nodeId: polaris
-              number: 5
+              number: 40
+
+        - name: Marseille
+          type: city
+          NodePopulation:
+            - nodeId: lyra
+              number: 200
+            - nodeId: polaris
+              number: 40
+
+
+        - name: Bordeaux
+          type: city
+          NodePopulation:
+            - nodeId: lyra
+              number: 200
+            - nodeId: polaris
+              number: 40
+
+        - name: Toulouse
+          type: city
+          NodePopulation:
+            - nodeId: lyra
+              number: 200
+            - nodeId: polaris
+              number: 40
+
+        - name: Nice
+          type: city
+          NodePopulation:
+            - nodeId: lyra
+              number: 200
+            - nodeId: polaris
+              number: 40
+
+        - name: Metz
+          type: city
+          NodePopulation:
+            - nodeId: lyra
+              number: 200
+            - nodeId: polaris
+              number: 40
+
+        - name: Dijon
+          type: city
+          NodePopulation:
+            - nodeId: lyra
+              number: 200
+            - nodeId: polaris
+              number: 40
+
+
+        - name: Nantes
+          type: city
+          NodePopulation:
+            - nodeId: lyra
+              number: 200
+            - nodeId: polaris
+              number: 40
+
+        - name: Paris
+          type: city
+          NodePopulation:
+            - nodeId: IoTHub
+              number: 1
+
+        - name: France
+          type: region
+          NodePopulation:
+            - nodeId: twilio
+              number: 1
+
+
+        - name: Lille
+          type: city
+          NodePopulation:
+            - nodeId: Lx-Dashboard
+              number: 1
+
+
+
