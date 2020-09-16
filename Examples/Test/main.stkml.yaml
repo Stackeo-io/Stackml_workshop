@@ -168,7 +168,7 @@ topology:
             - nodeId: polaris
               number: 40
 
-        - name: Parisr
+        - name: Paris
           type: city
           NodePopulation:
             - nodeId: IoTHub
