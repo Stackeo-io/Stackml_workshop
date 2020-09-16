@@ -1,4 +1,0 @@
-topology:
-  name: topology_name
-  useCase: usecase_name
-  systemType: IoT

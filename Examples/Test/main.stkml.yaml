@@ -86,7 +86,7 @@ topology:
             layer: Data
 
         #Edge To Platform
-        -   source: ploaris
+        -   source: polaris
             sink: IoTHub
             layer: Data
 
@@ -168,7 +168,7 @@ topology:
             - nodeId: polaris
               number: 40
 
-        - name: Paris
+        - name: Parisr
           type: city
           NodePopulation:
             - nodeId: IoTHub

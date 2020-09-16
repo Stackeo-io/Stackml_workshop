@@ -5,12 +5,12 @@ modeldef:
         type: ApplicationNode
         NetworklayerElement:
             - ElementType: Hub
-            - ComponentId: App-Connection
+            - ComponentId: LX-Connection
               nature: Hardware
         DatalayerElement:
           - ElementType: EndPoint
-          - ComponentId: LX-DashboardAppData
+          - ComponentId: LX-AppData
             nature: Software
         ServicelayerElement:
-          - ComponentId: LX-DasboardAPPService
+          - ComponentId: LX-APPService
             nature: Service
