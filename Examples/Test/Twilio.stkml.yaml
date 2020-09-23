@@ -2,6 +2,7 @@ modeldef:
     NodeModels:
         - id: Twilio
           type: NetworkNode
+          nature: Service
           NetworklayerElement:
             - ElementType: Hub
             - ComponentId: SFR_LTE-M
@@ -10,5 +11,5 @@ modeldef:
               nature: Hardware
           ConnectivitylayerElement:
               - ElementType: Hub
-              - ComponentId: twlilioHub
+              - ComponentId: TwilioCloud
                 nature: Service

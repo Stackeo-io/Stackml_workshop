@@ -3,6 +3,7 @@ modeldef:
   NodeModels:
     - id: Lyra
       type: ThingNode
+      nature: Hardware
       EnergylayerElement:
         - ComponentId: lyraPower
           nature: Hardware
@@ -58,10 +59,14 @@ modeldef:
           protocol:
             name: TLS
             version: 1.0.0
+      MessaginglayerElement:
+        - ElementType: EndPoint
+        - ComponentId: LyraMQTT
+          nature: Software
 
       DatalayerElement:
         - ElementType: EndPoint
-        - ComponentId: LyraDataCollect
+        - ComponentId: LyraDataSense
           nature: Software
           Workflow:
             - JobId: CollectPossition

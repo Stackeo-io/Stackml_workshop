@@ -3,24 +3,31 @@ import:
     - Lyra
     - Polaris
     - Twilio
-    - AwsIoT
     - LyxDashborad
+    - AwsIoT
+
+
 
 topology:
     name: Bricoloc
     useCase: Tracking
     Nodes:
-        - id: lyra
-          model: Lyra.Lyra
-          tier: Thing
-          cardinality: 1500
 
-        - id: polaris
+
+        - id: Polaris
           model: Polaris.Polaris
           tier: Edge
           cardinality: 300
 
-        - id: twilio
+        - id: Lyra
+          model: Lyra.Lyra
+          tier: Thing
+          cardinality: 1500
+
+
+
+
+        - id: Twilio
           model: Twilio.Twilio
           tier: Network
           cardinality: 1
@@ -38,17 +45,20 @@ topology:
     Links:
         #Network Layer
         #Thing To Edge
-        -   source: lyra
-            sink: polaris
+        -   source: Lyra
+            sink: Polaris
             layer: Network
+
 
         #Edge To WAN
-        -   source: polaris
-            sink: twilio
-            layer: Network
+
+
+        - source: Polaris
+          sink: Twilio
+          layer: Network
 
         #WAN To Platform
-        -   source: twilio
+        -   source: Twilio
             sink: IoTHub
             layer: Network
 
@@ -59,34 +69,43 @@ topology:
 
         #Connectivity Layer
         #Thing To Edge
-        -   source: lyra
-            sink: polaris
+        -   source: Lyra
+            sink: Polaris
             layer: Connectivity
 
+
+
         #Edge To WAN
-        -   source: polaris
-            sink: twilio
+
+        -   source: Polaris
+            sink: Twilio
             layer: Connectivity
 
         #WAN To Platform
-        -   source: twilio
+        -   source: Twilio
             sink: IoTHub
             layer: Connectivity
 
         #Messaging Layer
         #Edge To Platform
-        -   source: polaris
+        -   source: Lyra
+            sink: Polaris
+            layer: Messaging
+        -   source: Polaris
             sink: IoTHub
             layer: Messaging
 
         #Data Layer
         #Thing To Edge
-        -   source: lyra
-            sink: polaris
+        -   source: Lyra
+            sink: Polaris
             layer: Data
 
+
+
         #Edge To Platform
-        -   source: polaris
+
+        -   source: Polaris
             sink: IoTHub
             layer: Data
 
@@ -99,73 +118,73 @@ topology:
         #Platform To Application
         -   source: IoTHub
             sink: Lx-Dashboard
-            layer: Data
+            layer: Service
 
     Regions:
         - name: Lyon
           type: city
           NodePopulation:
-            - nodeId: lyra
+            - nodeId: Lyra
               number: 200
-            - nodeId: polaris
+            - nodeId: Polaris
               number: 40
 
         - name: Marseille
           type: city
           NodePopulation:
-            - nodeId: lyra
+            - nodeId: Lyra
               number: 200
-            - nodeId: polaris
+            - nodeId: Polaris
               number: 40
 
 
         - name: Bordeaux
           type: city
           NodePopulation:
-            - nodeId: lyra
+            - nodeId: Lyra
               number: 200
-            - nodeId: polaris
+            - nodeId: Polaris
               number: 40
 
         - name: Toulouse
           type: city
           NodePopulation:
-            - nodeId: lyra
+            - nodeId: Lyra
               number: 200
-            - nodeId: polaris
+            - nodeId: Polaris
               number: 40
 
         - name: Nice
           type: city
           NodePopulation:
-            - nodeId: lyra
+            - nodeId: Lyra
               number: 200
-            - nodeId: polaris
+            - nodeId: Polaris
               number: 40
 
         - name: Metz
           type: city
           NodePopulation:
-            - nodeId: lyra
+            - nodeId: Lyra
               number: 200
-            - nodeId: polaris
+            - nodeId: Polaris
               number: 40
 
         - name: Dijon
           type: city
           NodePopulation:
-            - nodeId: lyra
+            - nodeId: Lyra
               number: 200
-            - nodeId: polaris
+            - nodeId: Polaris
               number: 40
 
 
         - name: Nantes
           type: city
           NodePopulation:
-            - nodeId: lyra
+            - nodeId: Lyra
               number: 200
-            - nodeId: polaris
+            - nodeId: Polaris
               number: 40
 
         - name: Parisr
@@ -177,7 +196,7 @@ topology:
         - name: France
           type: region
           NodePopulation:
-            - nodeId: twilio
+            - nodeId: Twilio
               number: 1
 
 

@@ -3,6 +3,7 @@ modeldef:
   NodeModels:
     - id: IoTHub
       type: PlatformNode
+      nature: Service
       NetworklayerElement:
               - ElementType: Hub
               - ComponentId: AWS-Network

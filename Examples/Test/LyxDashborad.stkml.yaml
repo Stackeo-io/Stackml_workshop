@@ -3,6 +3,7 @@ modeldef:
     NodeModels:
       - id: Dashboard
         type: ApplicationNode
+        nature: Software
         NetworklayerElement:
             - ElementType: Hub
             - ComponentId: LX-Connection

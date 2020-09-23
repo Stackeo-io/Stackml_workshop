@@ -3,9 +3,9 @@ modeldef:
   NodeModels:
     - id: Polaris
       type: EdgeNode
-
+      nature: Hardware
       EnergylayerElement:
-        - ComponentId: polarisEnergy
+        - ComponentId: PolarisEnergy
           nature: Hardware
           power:
             input:
@@ -14,7 +14,7 @@ modeldef:
               amperage: 2
 
       PhysicallayerElement:
-        - ComponentId: polarisHardware
+        - ComponentId: PolarisHardware
           nature: Hardware
           cpu:
             manaufacturer: ARM
@@ -29,7 +29,7 @@ modeldef:
 
       NetworklayerElement:
         - ElementType: Hub
-        - ComponentId: polarisBLE
+        - ComponentId: PolarisBLE
           nature: Hardware
           type: BLE
 
@@ -39,19 +39,19 @@ modeldef:
 
       ConnectivitylayerElement:
         - ElementType: Hub
-        - ComponentId: polarisSSL
+        - ComponentId: PolarisSSL
           nature: Software
           protocol:
             name: TLS
             version: 1.0.0
-        - ComponentId: polarisTwilio
+        - ComponentId: PolarisTwilio
           nature: service
           protocol:
             name: SSL
             version: 1.0.0
       MessaginglayerElement:
         - ElementType: EndPoint
-        - ComponentId: polarisBrocker
+        - ComponentId: PolarisBroker
           nature: Software
           pattern: Publisher-Subscriber
           protocol:
@@ -60,7 +60,7 @@ modeldef:
 
       DatalayerElement:
         - ElementType: EndPoint
-        - ComponentId: polarisProcess
+        - ComponentId: PolarisProcess
           nature: Software
           Workflow:
             - JobId: polarisProcess1
