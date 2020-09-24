@@ -6,14 +6,10 @@ import:
     - LyxDashborad
     - AwsIoT
 
-
-
 topology:
     name: Bricoloc
     useCase: Tracking
     Nodes:
-
-
         - id: Polaris
           model: Polaris.Polaris
           tier: Edge
@@ -23,9 +19,6 @@ topology:
           model: Lyra.Lyra
           tier: Thing
           cardinality: 1500
-
-
-
 
         - id: Twilio
           model: Twilio.Twilio
@@ -51,7 +44,6 @@ topology:
 
 
         #Edge To WAN
-
 
         - source: Polaris
           sink: Twilio
