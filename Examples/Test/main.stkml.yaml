@@ -42,9 +42,7 @@ topology:
             sink: Polaris
             layer: Network
 
-
         #Edge To WAN
-
         - source: Polaris
           sink: Twilio
           layer: Network

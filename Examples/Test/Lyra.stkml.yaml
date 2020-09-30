@@ -24,7 +24,7 @@ modeldef:
             type: slot
             size:
               unit: KB
-              value: 80
+              value: 8
           os:
             name: LX OS
           dimension:
@@ -64,28 +64,5 @@ modeldef:
         - ComponentId: LyraMQTT
           nature: Software
 
-      DatalayerElement:
-        - ElementType: EndPoint
-        - ComponentId: LyraDataSense
-          nature: Software
-          Workflow:
-            - JobId: CollectPossition
-              Args:
-                - name: arg1
-                  type: In
-                  data:
-                    size:
-                      value: 50
-                      unit: B
-                    type: Stream
-            - JobId: SendPossition
-              prec: CollectPossition
-              Args:
-                - name: arg1
-                  type: Out
-                  data:
-                    size:
-                      value: 50
-                      unit: B
-                    type: Stream
+
       documentation: https://lx-group.com.au/iot-cores/#tabllink-2
