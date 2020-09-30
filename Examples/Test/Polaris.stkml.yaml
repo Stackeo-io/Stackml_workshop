@@ -58,5 +58,18 @@ modeldef:
             name: MQTT
             version: 1.4.0
 
-
+      DatalayerElement:
+        - ElementType: EndPoint
+        - ComponentId: PolarisProcess
+          nature: Software
+          Workflow:
+            - JobId: polarisProcess1
+              Args:
+                - name: arg1
+                  type: In
+                  data:
+                    size:
+                      value: 50
+                      unit: B
+                    type: Stream
       documentation: https://fortebit.tech/docs/manuals/polaris/
