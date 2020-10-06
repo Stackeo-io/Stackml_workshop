@@ -1,8 +1,8 @@
 ---
 modeldef:
     NodeModels:
-      - id: Dashboard
-        type: ApplicationNode
+      - name: Dashboard
+        technology: Dashboard
         nature: Software
         NetworklayerElement:
             - ElementType: Hub

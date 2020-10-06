@@ -1,8 +1,8 @@
 ---
 modeldef:
   NodeModels:
-    - id: Polaris
-      type: EdgeNode
+    - name: Polaris
+      technology: Edge Computing Node
       nature: Hardware
       EnergylayerElement:
         - ComponentId: PolarisEnergy

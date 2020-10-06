@@ -1,8 +1,8 @@
 ---
 modeldef:
   NodeModels:
-    - id: Lyra
-      type: ThingNode
+    - name: Lyra
+      technology: Simple Thing
       nature: Hardware
       EnergylayerElement:
         - ComponentId: lyraPower
