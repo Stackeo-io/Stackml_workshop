@@ -16,7 +16,7 @@ A la fin des 90 minutes tu devrais avoir finalisé les 7 steps et constitué:
 *   La topologie de deploiement
 *   La carte du déploiement
 
-La documentation est accessible en ligne: [stkml.stackeo.io](stkml.stackeo.io)
+La documentation est accessible en ligne: [stkml.stackeo.io](https://stkml.stackeo.io)
 , [pypi.org/project/stkml/](pypi.org/project/stkml/)
 
 Si vous avez des questions vous pouvez les envoyer sur le canal : [https://stkml.slack.com/archives/C01C1DQNXQ9
