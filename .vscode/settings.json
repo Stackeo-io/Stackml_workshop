@@ -1,5 +1,5 @@
 {
     "yaml.schemas": {
-        "https://stackml.stackeo.io/_static/stackml.schema.json": "*.stkml.yaml"
+        "https://stkml.stackeo.io/_static/stackml.schema.json": "*.stkml.yaml"
     }
 }
