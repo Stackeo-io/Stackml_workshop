@@ -16,8 +16,8 @@ A la fin des 90 minutes tu devrais avoir finalisé les 7 steps et constitué:
 *   La topologie de deploiement
 *   La carte du déploiement
 
-La documentation est accessible en ligne: [stkml.stackeo.io](stkml.stackeo.io)
-, [pypi.org/project/stkml/](pypi.org/project/stkml/)
+La documentation est accessible en ligne: [stkml.stackeo.io](https://stkml.stackeo.io)
+, [pypi.org/project/stkml/](https://pypi.org/project/stkml/)
 
 Si vous avez des questions vous pouvez les envoyer sur le canal : [https://stkml.slack.com/archives/C01C1DQNXQ9
 ](https://stkml.slack.com/archives/C01C1DQNXQ9)
@@ -43,27 +43,35 @@ Si vous avez des questions vous pouvez les envoyer sur le canal : [https://stkml
 ![](img/terminale.png)
 5.  Installer stkml : pip install stkml
 6.  Tester l’exemple:
-    1. Visualiser  le projet Examples/Bricoloc/level1 
-    2. Checker le projet : stkml check -i Examples/Bricoloc/level1/
-    3. Introduire une erreur syntaxique et rechercher puis corriger
-    4. Générer un image général du système:
-        *   stkml compile -i Examples/Bricoloc/level1/ diagram -t 1 -o diagramm1 
-        *   ouvrir en cliquant sur le fichier ou avec la preview web (actualiser la page) 
-    5. Générer un diagramme du système, editable:
-        *  stkml compile -i Examples/Bricoloc/level1/ drawio -l 1 -o drawio1 -i Examples/Bricoloc/icons/ 
-        *  ouvrir avec [https://app.diagrams.net/](https://app.diagrams.net/) en utilisant le URL du fichier drawio à partir de la preview
+    a. Visualiser  le projet Examples/Bricoloc/level1 
+    b. Checker le projet : stkml check -i Examples/Bricoloc/level1/
+    c. Introduire une erreur syntaxique et rechercher puis corriger
+    d. Générer un image général du système:
+        
+        -   stkml compile -i Examples/Bricoloc/level1/ diagram -t 1 -o diagramm1 
+        -   ouvrir en cliquant sur le fichier ou avec la preview web (actualiser la page)
+         
+    e. Générer un diagramme du système, editable:
+        -  stkml compile -i Examples/Bricoloc/level1/ drawio -l 1 -o drawio1 -i Examples/Bricoloc/icons/ 
+        -  ouvrir avec [https://app.diagrams.net/](https://app.diagrams.net/) en utilisant le URL du fichier drawio à partir de la preview
             ![](img/web.png)
             ![](img/drawio1.png)
             ![](img/drawio2.png)
-    6. Générer un diagramme editable des couches du système (niveau 2) :
-        *   stkml compile -i Examples/Bricoloc/level2 drawio -l 2 -o drawio2 
-        *    ouvrir avec [https://app.diagrams.net/](https://app.diagrams.net/) en utilisant le URL du fichier drawio à partir de la preview
-    7. Générer la topologie de déploiement:
-        *   stkml compile -i Examples/Bricoloc/level1/ diagram -t 2 -o diagramm2
-        *    ouvrir en cliquant sur le fichier ou avec l'interface web
-    8. Générer la carte de déploiement:
-        *   stkml compile -i Examples/Bricoloc/level1/ diagram -t 3 -o diagramm3 -i Examples/Bricoloc/icons/
-        *   ouvrir avec l'interface web
+    
+    f. Générer un diagramme editable des couches du système (niveau 2) :
+    
+        -   stkml compile -i Examples/Bricoloc/level2 drawio -l 2 -o drawio2 
+        -   ouvrir avec [https://app.diagrams.net/](https://app.diagrams.net/) en utilisant le URL du fichier drawio à partir de la preview
+        
+    g. Générer la topologie de déploiement:
+    
+        -   stkml compile -i Examples/Bricoloc/level1/ diagram -t 2 -o diagramm2
+        -    ouvrir en cliquant sur le fichier ou avec l'interface web
+        
+    h. Générer la carte de déploiement:
+    
+        -   stkml compile -i Examples/Bricoloc/level1/ diagram -t 3 -o diagramm3 -i Examples/Bricoloc/icons/
+        -   ouvrir avec l'interface web
 
     
 
