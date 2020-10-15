@@ -4,13 +4,13 @@ topology:
   name: Hello World!
   useCase: Smart Thermostat
   Nodes:
-    - id: Termostat
-      model: NetatmoTermostat
+    - id: MyTermostat
+      model: TemperatureSensor
       tier: Thing
 
 
 modeldef:
   NodeModels:
-    - name: NetatmoTermostat
+    - name: TemperatureSensor
       technology: Sensor
       nature: Hardware

@@ -26,18 +26,24 @@ def get_stackml_schema() -> dict or None:
         exit('Warning: Stackml schema does not find')
     request.close()
     return schema
-
-if __name__ == "__main__":
-    system = 'Examples/Test/main.stkml.yaml'
-    schema = get_stackml_schema()
+def check_stkml_project(system, schema):
     stackml = checkStackml(schema, system)
     path = os.path.abspath(system).split('main.stkml.yaml')[0]
-    for o in stackml['import']:
+    for o in (stackml.get('import') or []):
         imports = os.path.join(path, f'{o}{system.split("main")[-1]}')
         if os.path.isfile(imports):
-            try: 
+            try:
                 checkStackml(schema, imports)
             except jsonschema.exceptions.ValidationError as e:
                 raise e
         else:
             raise FileNotFoundError
+
+if __name__ == "__main__":
+    schema = get_stackml_schema()
+    system = 'Examples/Bricoloc/level1/main.stkml.yaml'
+    check_stkml_project(system, schema)
+    system = 'Examples/Bricoloc/level2/main.stkml.yaml'
+    check_stkml_project(system, schema)
+    system = 'Examples/helloWorld/main.stkml.yaml'
+    check_stkml_project(system, schema)
