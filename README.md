@@ -41,6 +41,7 @@ Si vous avez des questions vous pouvez les envoyer sur le canal : [https://stkml
       
 
 ![](img/terminale.png)
+
 5.  Installer stkml : pip install stkml
 6.  Tester l’exemple:
     a. Visualiser  le projet Examples/Bricoloc/level1 
