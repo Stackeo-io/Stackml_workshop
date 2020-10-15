@@ -1,0 +1,6 @@
+---
+modeldef:
+  NodeModels:
+    - name: Lyra
+      technology: Simple Thing
+      nature: Hardware

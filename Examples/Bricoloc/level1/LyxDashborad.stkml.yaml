@@ -1,0 +1,6 @@
+---
+modeldef:
+    NodeModels:
+      - name: Dashboard
+        technology: Dashboard
+        nature: Software

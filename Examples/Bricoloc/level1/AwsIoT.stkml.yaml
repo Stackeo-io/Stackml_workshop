@@ -1,0 +1,6 @@
+---
+modeldef:
+  NodeModels:
+    - name: IoTHub
+      technology: IoT Hub
+      nature: Service

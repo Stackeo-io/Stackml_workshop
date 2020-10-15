@@ -1,0 +1,5 @@
+modeldef:
+    NodeModels:
+        - name: Twilio
+          technology: Public Wired Network
+          nature: Service

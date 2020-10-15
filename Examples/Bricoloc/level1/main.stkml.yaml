@@ -1,0 +1,138 @@
+---
+import:
+    - Lyra
+    - Polaris
+    - Twilio
+    - LyxDashborad
+    - AwsIoT
+
+topology:
+    name: Bricoloc
+    useCase: Tracking
+    Nodes:
+        - id: Lyra
+          model: Lyra.Lyra
+          tier: Thing
+          cardinality: 1500
+
+        - id: Polaris
+          model: Polaris.Polaris
+          tier: Edge
+          cardinality: 300
+
+        - id: Twilio
+          model: Twilio.Twilio
+          tier: Network
+          cardinality: 1
+
+        - id: IoTHub
+          model: AwsIoT.IoTHub
+          tier: Platform
+          cardinality: 1
+
+        - id: Lx-Dashboard
+          model: LyxDashborad.Dashboard
+          tier: Application
+          cardinality: 1
+
+    Links:
+        #Thing To Edge
+        -   source: Lyra
+            sink: Polaris
+
+        #Edge To WAN
+        - source: Polaris
+          sink: Twilio
+
+        #WAN To Platform
+        -   source: Twilio
+            sink: IoTHub
+
+        #Platform To Application
+        -   source: IoTHub
+            sink: Lx-Dashboard
+
+    Regions:
+        - name: Lyon
+          type: city
+          NodePopulation:
+            - nodeId: Lyra
+              number: 200
+            - nodeId: Polaris
+              number: 40
+
+        - name: Marseille
+          type: city
+          NodePopulation:
+            - nodeId: Lyra
+              number: 200
+            - nodeId: Polaris
+              number: 40
+
+
+        - name: Bordeaux
+          type: city
+          NodePopulation:
+            - nodeId: Lyra
+              number: 200
+            - nodeId: Polaris
+              number: 40
+
+        - name: Toulouse
+          type: city
+          NodePopulation:
+            - nodeId: Lyra
+              number: 200
+            - nodeId: Polaris
+              number: 40
+
+        - name: Nice
+          type: city
+          NodePopulation:
+            - nodeId: Lyra
+              number: 200
+            - nodeId: Polaris
+              number: 40
+
+        - name: Metz
+          type: city
+          NodePopulation:
+            - nodeId: Lyra
+              number: 200
+            - nodeId: Polaris
+              number: 40
+
+        - name: Dijon
+          type: city
+          NodePopulation:
+            - nodeId: Lyra
+              number: 200
+            - nodeId: Polaris
+              number: 40
+
+
+        - name: Nantes
+          type: city
+          NodePopulation:
+            - nodeId: Lyra
+              number: 200
+            - nodeId: Polaris
+              number: 40
+
+        - name: Paris
+          type: city
+          NodePopulation:
+            - nodeId: IoTHub
+              number: 1
+
+        - name: France
+          type: region
+          NodePopulation:
+            - nodeId: Twilio
+              number: 1
+
+        - name: Lille
+          type: city
+          NodePopulation:
+            - nodeId: Lx-Dashboard
+              number: 1

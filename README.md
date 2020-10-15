@@ -1,9 +1,9 @@
 
-# Stackml workshop
+# Stkml workshop
 
 #Practical work
 
-Objectif : l’objectif de cette série d’exercices est de t’aider à décrire, en stackml, une architecture de système IoT bout en bout, pas à pas, en suivant la méthodologie TENPA. 
+Objectif : l’objectif de cette série d’exercices est de t’aider à décrire, en stkml, une architecture de système IoT bout en bout, pas à pas, en suivant la méthodologie TENPA. 
 
 A la fin des 90 minutes tu devrais avoir finalisé les 7 steps et constitué:
 
@@ -16,13 +16,19 @@ A la fin des 90 minutes tu devrais avoir finalisé les 7 steps et constitué:
 *   La topologie de deploiement
 *   La carte du déploiement
 
+La documentation est accessible en ligne: [stkml.stackeo.io](stkml.stackeo.io)
+, [pypi.org/project/stkml/](pypi.org/project/stkml/)
+
+Si vous avez des questions vous pouvez les envoyer sur le canal : [https://stkml.slack.com/archives/C01C1DQNXQ9
+](https://stkml.slack.com/archives/C01C1DQNXQ9)
+
 
 ## Step #1 : Setup 
 
 
 
 1. Se connecter sur Gitpod
-2. Aller à [https://gitpod.io/#https://github.com/Stackeo-io/Stackml_workshop](https://gitpod.io/#https://github.com/Stackeo-io/Stackml_workshop)
+2. Aller à [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/Stackeo-io/stkml_workshop)
 3. Cliquer sur Open Preview 
 
     
@@ -34,35 +40,35 @@ A la fin des 90 minutes tu devrais avoir finalisé les 7 steps et constitué:
         
 
 ![](img/terminale.png)
-5.  Installer stackml : pip install stackml
+5.  Installer stkml : pip install stkml
 6.  Tester l’exemple:
     1. Visualiser  le projet Examples/Test 
-    2. Checker le projet : stackml check -i Examples/Test
+    2. Checker le projet : stkml check -i Examples/Test
     3. Introduire une erreur syntaxique et rechercher puis corriger
     4. Générer un image général du système:
-        *   stackml compile -i Examples/Test diagram -t 1 -o diagramme1 
+        *   stkml compile -i Examples/Bricoloc/level1/ diagram -t 1 -o diagramme1 
         *   ouvrir en cliquant sur le fichier ou avec la preview web (actualiser la page) 
     5. Générer un diagramme du système, editable:
-        *  stackml compile -i Examples/Test drawio -l 1 -o digramme1    
+        *  stkml compile -i Examples/Bricoloc/level1/ drawio -l 1 -o digramme1    
         *  ouvrir avec [https://app.diagrams.net/](https://app.diagrams.net/) en utilisant le URL du fichier drawio à partir de la preview
             ![](img/web.png)
             ![](img/drawio1.png)
             ![](img/drawio2.png)
     6. Générer un diagramme editable des couches du système (niveau 2) :
-        *   stackml compile -i Examples/Test drawio -l 2 -o diagramme2 
+        *   stkml compile -i Examples/Bricoloc/level2 drawio -l 2 -o diagramme2 
         *    ouvrir avec [https://app.diagrams.net/](https://app.diagrams.net/) en utilisant le URL du fichier drawio à partir de la preview
     7. Générer la topologie de déploiement:
-        *   stackml compile -i Examples/Test diagram -t 2 -o diagramme3 
+        *   stkml compile -i Examples/Bricoloc/level1/ diagram -t 2 -o diagramme3 
         *    ouvrir en cliquant sur le fichier ou avec l'interface web
     8. Générer la carte de déploiement:
-        *   stackml compile -i Examples/Test diagram -t 3 -o diagramm3 
+        *   stkml compile -i Examples/Bricoloc/level1/ diagram -t 3 -o diagramm3 
         *   ouvrir avec l'interface web
 
     
 
 
 ```
-Rajouter toujours l'extension .stkml.yaml au fichiers stackml
+Rajouter toujours l'extension .stkml.yaml au fichiers stkml
 Utiliser ctrl+space pour l'autocomplete et les suggestions 
 ```
 
@@ -84,7 +90,7 @@ Utiliser ctrl+space pour l'autocomplete et les suggestions
 
 1. Développer le fichier principal (main) de votre use case
 2. Créer un nouveau répertoire
-3. Stackml init (éventuellement -p nomrep)
+3. stkml init (éventuellement -p nomrep)
 4. Ouvrir le fichier main
 5. Définir le niveau 1 du système de votre use case : level 1
 6. Importer les bibliothèques correspondantes. Si elles n’existent pas passer au step #4 suivant puis revenir ici.

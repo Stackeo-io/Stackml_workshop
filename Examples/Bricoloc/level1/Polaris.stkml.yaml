@@ -1,0 +1,6 @@
+---
+modeldef:
+  NodeModels:
+    - name: Polaris
+      technology: Edge Computing Node
+      nature: Hardware
