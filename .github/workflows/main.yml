@@ -20,5 +20,5 @@ jobs:
                     sudo pip install pipenv
                     pipenv install
 
-            - name: validate the StackMl configuration File
+            - name: validate the StkMl configuration File
               run: .workspace/bin/test
