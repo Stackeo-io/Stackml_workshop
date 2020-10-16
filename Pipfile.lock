@@ -1,11 +1,11 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "060f778a2b774dae122582124cc582ebfd7c157bbe0621989617d126ec8eedf1"
+            "sha256": "f205f229b85aaf9ad8b90ac5d73c1aae6a24df46f86f0ace9c9115bb3cb589d4"
         },
         "pipfile-spec": 6,
         "requires": {
-            "python_version": "3.8"
+            "python_version": "3.6"
         },
         "sources": [
             {
@@ -54,9 +54,9 @@
         },
         "pyrsistent": {
             "hashes": [
-                "sha256:27515d2d5db0629c7dadf6fbe76973eb56f098c1b01d36de42eb69220d2c19e4"
+                "sha256:2e636185d9eb976a18a8a8e96efce62f2905fea90041958d8cc2a189756ebf3e"
             ],
-            "version": "==0.17.2"
+            "version": "==0.17.3"
         },
         "pyyaml": {
             "hashes": [
