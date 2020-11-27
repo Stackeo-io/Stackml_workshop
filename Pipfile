@@ -6,9 +6,6 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-jsonschema = "*"
-pyyaml = "*"
-requests = "*"
 stkml = "==1.0.2a0"
 
 [requires]

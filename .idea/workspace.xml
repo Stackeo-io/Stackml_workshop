@@ -19,17 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="756a647c-252e-4fcd-9996-b894e24f8adf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.workspace/bin/check" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/main.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/schedule_verification.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/schedule_verification.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsonSchemas.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsonSchemas.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.workspace/bin/test" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.workspace/bin/yamllint.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Examples/Bricoloc/level2/AwsIoT.stkml.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/Bricoloc/level2/AwsIoT.stkml.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile.lock" afterDir="false" />
-    </list>
+    <list default="true" id="756a647c-252e-4fcd-9996-b894e24f8adf" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -57,7 +47,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1606474578322</updated>
-      <workItem from="1606474579653" duration="1098000" />
+      <workItem from="1606474579653" duration="1520000" />
     </task>
     <servers />
   </component>
