@@ -1,0 +1,10 @@
+#!/bin/bash
+# This script checks the integrity of stkml examples
+
+packages=("Bricoloc/level1" "Bricoloc/level2" "helloWorld")
+# shellcheck disable=SC2068
+for p in ${packages[@]}; do
+  package="Examples/$p"
+  echo "checking $package"
+  pipenv run stkml check -i $package
+done

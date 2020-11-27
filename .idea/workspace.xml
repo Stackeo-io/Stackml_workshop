@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="756a647c-252e-4fcd-9996-b894e24f8adf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.workspace/bin/check" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/main.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/schedule_verification.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/schedule_verification.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsonSchemas.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsonSchemas.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.workspace/bin/test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.workspace/bin/yamllint.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Examples/Bricoloc/level2/AwsIoT.stkml.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/Bricoloc/level2/AwsIoT.stkml.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pipfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile.lock" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JupyterTrust" id="2155f571-8b5a-4df1-872a-cc14038833c6" />
+  <component name="ProjectId" id="1ks1eCuJqFyQEn6mXjhvEBTyDHy" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="756a647c-252e-4fcd-9996-b894e24f8adf" name="Default Changelist" comment="" />
+      <created>1606474578322</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1606474578322</updated>
+      <workItem from="1606474579653" duration="1098000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="440" y="169" key="#JSON_Schema_Mappings" timestamp="1606475678520">
+      <screen x="0" y="25" width="1680" height="963" />
+    </state>
+    <state x="440" y="169" key="#JSON_Schema_Mappings/0.25.1680.963/-3200.-695.3200.1775@0.25.1680.963" timestamp="1606475678520" />
+    <state x="627" y="265" key="FileChooserDialogImpl" timestamp="1606474867982">
+      <screen x="0" y="25" width="1680" height="963" />
+    </state>
+    <state x="627" y="265" key="FileChooserDialogImpl/0.25.1680.963/-3200.-695.3200.1775@0.25.1680.963" timestamp="1606474867982" />
+    <state x="349" y="142" key="SettingsEditor" timestamp="1606474725581">
+      <screen x="0" y="25" width="1680" height="963" />
+    </state>
+    <state x="349" y="142" key="SettingsEditor/0.25.1680.963/-3200.-695.3200.1775@0.25.1680.963" timestamp="1606474725581" />
+  </component>
+</project>

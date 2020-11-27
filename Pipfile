@@ -9,6 +9,7 @@ verify_ssl = true
 jsonschema = "*"
 pyyaml = "*"
 requests = "*"
+stkml = "==1.0.2a0"
 
 [requires]
 python_version = "3.6"

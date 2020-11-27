@@ -1,28 +1,34 @@
 ---
 modeldef:
-  NodeModels:
-    - name: IoTHub
-      technology: IoT Hub
-      nature: Service
-      NetworklayerElement:
-              - ElementType: Hub
-              - ComponentId: AWS-Network
-                nature: Hardware
-              - ComponentId: AWS-App
-                nature: Hardware
-      ConnectivitylayerElement:
-          - ElementType: Hub
-          - ComponentId: AWS-IoT-SSL
-            nature: Service
-      MessaginglayerElement:
-        - ElementType: Hub
-        - ComponentId: IOT-Hub
+    NodeModels:
+        - name: IoTHub
+          technology: IoT Hub
           nature: Service
-      DatalayerElement:
-        - ElementType: Hub
-        - ComponentId: LX-Incyt.io
-          nature: Service
-      ServicelayerElement:
-        - ComponentId: LX-DasboardService
-          nature: Service
-      documentation: https://www.twilio.com/docs
+          NetworklayerElement:
+              ElementType: Hub
+              Components:
+                  - name: AWS-Network
+                    nature: Hardware
+                  - name: AWS-App
+                    nature: Hardware
+          ConnectivitylayerElement:
+              ElementType: Hub
+              Components:
+                  - name: AWS-IoT-SSL
+                    nature: Service
+          MessaginglayerElement:
+            ElementType: Hub
+            Components:
+                - name: IOT-Hub
+                  nature: Service
+          DatalayerElement:
+            ElementType: Hub
+            Components:
+                - name: LX-Incyt.io
+                  nature: Service
+          ServicelayerElement:
+            Components:
+                - name: LX-DasboardService
+                  nature: Service
+
+

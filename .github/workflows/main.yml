@@ -21,4 +21,4 @@ jobs:
                     pipenv install
 
             - name: validate the StkMl configuration File
-              run: .workspace/bin/test
+              run: .workspace/bin/check

@@ -4,12 +4,14 @@ modeldef:
           technology: Public Wired Network
           nature: Service
           NetworklayerElement:
-            - ElementType: Hub
-            - ComponentId: SFR_LTE-M
-              nature: Hardware
-            - ComponentId: SFR-Aws
-              nature: Hardware
+            ElementType: Hub
+            Components:
+                - name: SFR_LTE-M
+                  nature: Hardware
+                - name: SFR-Aws
+                  nature: Hardware
           ConnectivitylayerElement:
-              - ElementType: Hub
-              - ComponentId: TwilioCloud
-                nature: Service
+              ElementType: Hub
+              Components:
+                  - name: twlilioHub
+                    nature: Service

@@ -5,13 +5,16 @@ modeldef:
         technology: Dashboard
         nature: Software
         NetworklayerElement:
-            - ElementType: Hub
-            - ComponentId: LX-Connection
-              nature: Hardware
+            ElementType: Hub
+            Components:
+                - name: App-Connection
+                  nature: Hardware
         DatalayerElement:
-          - ElementType: EndPoint
-          - ComponentId: LX-AppData
-            nature: Software
+          ElementType: EndPoint
+          Components:
+              - name: LX-DashboardAppData
+                nature: Software
         ServicelayerElement:
-          - ComponentId: LX-APPService
-            nature: Service
+            Components:
+                - name: LX-DasboardAPPService
+                  nature: Service

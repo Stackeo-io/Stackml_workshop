@@ -1,5 +1,0 @@
-#!/bin/bash
-# This script checks the integrity of yaml repository
-
-#xmllint examples/*.stkml  --schema StackMl.xsd --noout
-pipenv run python .workspace/bin/yamllint.py
