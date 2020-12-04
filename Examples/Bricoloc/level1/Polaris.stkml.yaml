@@ -4,3 +4,4 @@ modeldef:
     - name: Polaris
       technology: Edge Computing Node
       nature: Hardware
+      icon: ../icons/Polaris.png

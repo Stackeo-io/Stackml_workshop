@@ -38,15 +38,15 @@ modeldef:
             - name: CoreSensor
               nature: Hardware
               Sensor:
-                - name: LXSensorArray
-                  type:
-                    - Temperature
-                    - Light
-                    - Motion
-                    - Gyroscope
-                    - Humidity
-                    - Magnetometer
-                    - AirPresure
+                name: LXSensorArray
+                type:
+                  - Temperature
+                  - Light
+                  - Motion
+                  - Gyroscope
+                  - Humidity
+                  - Magnetometer
+                  - AirPresure
 
       NetworklayerElement:
         ElementType: EndPoint

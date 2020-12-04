@@ -4,3 +4,4 @@ modeldef:
       - name: Dashboard
         technology: Dashboard
         nature: Software
+        icon: ../icons/Lx-Dashboard.png

@@ -21,8 +21,10 @@
   <component name="ChangeListManager">
     <list default="true" id="756a647c-252e-4fcd-9996-b894e24f8adf" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Examples/Bricoloc/level1/Lyra.stkml.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/Bricoloc/level1/Lyra.stkml.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Examples/Bricoloc/level1/LyxDashborad.stkml.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/Bricoloc/level1/LyxDashborad.stkml.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Examples/Bricoloc/level1/Polaris.stkml.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/Bricoloc/level1/Polaris.stkml.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Examples/Bricoloc/level2/Lyra.stkml.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/Bricoloc/level2/Lyra.stkml.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +43,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Examples/Bricoloc/level1" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -48,6 +51,11 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Examples/Bricoloc/level1" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -58,6 +66,9 @@
       <option name="presentableId" value="Default" />
       <updated>1606474578322</updated>
       <workItem from="1606474579653" duration="1859000" />
+      <workItem from="1606734450356" duration="4203000" />
+      <workItem from="1606750759518" duration="797000" />
+      <workItem from="1606810861801" duration="1113000" />
     </task>
     <servers />
   </component>
@@ -74,12 +85,13 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="440" y="169" key="#JSON_Schema_Mappings" timestamp="1606475678520">
+    <state x="440" y="169" key="#JSON_Schema_Mappings" timestamp="1606750956138">
       <screen x="0" y="25" width="1680" height="963" />
     </state>
-    <state x="440" y="169" key="#JSON_Schema_Mappings/0.25.1680.963/-3200.-695.3200.1775@0.25.1680.963" timestamp="1606475678520" />
+    <state x="440" y="169" key="#JSON_Schema_Mappings/0.25.1680.963/-3200.-695.3200.1775@0.25.1680.963" timestamp="1606750956138" />
     <state x="627" y="265" key="FileChooserDialogImpl" timestamp="1606474867982">
       <screen x="0" y="25" width="1680" height="963" />
     </state>

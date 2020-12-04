@@ -4,3 +4,4 @@ modeldef:
     - name: Lyra
       technology: Simple Thing
       nature: Hardware
+      icon: ../icons/Lyra.png
