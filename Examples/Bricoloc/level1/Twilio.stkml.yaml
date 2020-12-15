@@ -3,3 +3,4 @@ modeldef:
         - name: Twilio
           technology: Public Wired Network
           nature: Service
+          icon: ../icons/Twilio.png

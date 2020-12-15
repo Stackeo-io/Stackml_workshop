@@ -6,5 +6,5 @@ packages=("Bricoloc/level1" "Bricoloc/level2" "helloWorld")
 for p in ${packages[@]}; do
   package="Examples/$p"
   echo "checking $package"
-  pipenv run stkml check -i $package
+  pipenv run stkml check $package
 done

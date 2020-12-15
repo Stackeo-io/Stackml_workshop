@@ -4,3 +4,4 @@ modeldef:
     - name: IoTHub
       technology: IoT Hub
       nature: Service
+      icon: ../icons/IoTHub.png

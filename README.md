@@ -28,7 +28,7 @@ Si vous avez des questions vous pouvez les envoyer sur le canal : [https://stkml
 
 
 1. Se connecter sur Gitpod
-2. Aller à [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/Stackeo-io/stkml_workshop)
+2. Aller à [![Open in Gitpod](https://gitpod.io/button/openn-gitpod.svg)](https://gitpod.io/#https://github.com/Stackeoo/stkml_workshop)
 3. Cliquer sur Open Preview 
 
     
@@ -45,15 +45,15 @@ Si vous avez des questions vous pouvez les envoyer sur le canal : [https://stkml
 5.  Installer stkml : pip install stkml
 6.  Tester l’exemple:
     a. Visualiser  le projet Examples/Bricoloc/level1 
-    b. Checker le projet : stkml check -i Examples/Bricoloc/level1/
+    b. Checker le projet : stkml check Examples/Bricoloc/level1/
     c. Introduire une erreur syntaxique et rechercher puis corriger
     d. Générer un image général du système:
         
-        -   stkml compile -i Examples/Bricoloc/level1/ diagram -t 1 -o diagramm1 
+        -   stkml compile Examples/Bricoloc/level1/ diagram -t 1 -o diagramm1 
         -   ouvrir en cliquant sur le fichier ou avec la preview web (actualiser la page)
          
     e. Générer un diagramme du système, editable:
-        -  stkml compile -i Examples/Bricoloc/level1/ drawio -l 1 -o drawio1 -i Examples/Bricoloc/icons/ 
+        -  stkml compile Examples/Bricoloc/level1/ drawio -l 1 -o drawio1
         -  ouvrir avec [https://app.diagrams.net/](https://app.diagrams.net/) en utilisant le URL du fichier drawio à partir de la preview
             ![](img/web.png)
             ![](img/drawio1.png)
@@ -61,17 +61,17 @@ Si vous avez des questions vous pouvez les envoyer sur le canal : [https://stkml
     
     f. Générer un diagramme editable des couches du système (niveau 2) :
     
-        -   stkml compile -i Examples/Bricoloc/level2 drawio -l 2 -o drawio2 
+        -   stkml compile  Examples/Bricoloc/level2 drawio -l 2 -o drawio2 
         -   ouvrir avec [https://app.diagrams.net/](https://app.diagrams.net/) en utilisant le URL du fichier drawio à partir de la preview
         
     g. Générer la topologie de déploiement:
     
-        -   stkml compile -i Examples/Bricoloc/level1/ diagram -t 2 -o diagramm2
+        -   stkml compile  Examples/Bricoloc/level1/ diagram -t 2 -o diagramm2
         -    ouvrir en cliquant sur le fichier ou avec l'interface web
         
     h. Générer la carte de déploiement:
     
-        -   stkml compile -i Examples/Bricoloc/level1/ diagram -t 3 -o diagramm3 -i Examples/Bricoloc/icons/
+        -   stkml compile  Examples/Bricoloc/level1/ diagram -t 3 -o diagramm3
         -   ouvrir avec l'interface web
 
     
