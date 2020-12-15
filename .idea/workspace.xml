@@ -21,12 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="756a647c-252e-4fcd-9996-b894e24f8adf" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.workspace/bin/check" beforeDir="false" afterPath="$PROJECT_DIR$/.workspace/bin/check" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Examples/Bricoloc/level1/AwsIoT.stkml.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/Bricoloc/level1/AwsIoT.stkml.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Examples/Bricoloc/level1/Twilio.stkml.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/Bricoloc/level1/Twilio.stkml.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pipfile.lock" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +69,7 @@
       <workItem from="1607098531267" duration="2241000" />
       <workItem from="1607194370560" duration="70000" />
       <workItem from="1607335592427" duration="13000" />
-      <workItem from="1608031104120" duration="919000" />
+      <workItem from="1608031104120" duration="1573000" />
     </task>
     <servers />
   </component>
