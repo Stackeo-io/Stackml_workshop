@@ -19,9 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="756a647c-252e-4fcd-9996-b894e24f8adf" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="756a647c-252e-4fcd-9996-b894e24f8adf" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,6 +36,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Examples/Bricoloc/level1" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -69,6 +68,9 @@
       <workItem from="1607194370560" duration="70000" />
       <workItem from="1607335592427" duration="13000" />
       <workItem from="1608031104120" duration="2059000" />
+      <workItem from="1608033429765" duration="612000" />
+      <workItem from="1615542739600" duration="3942000" />
+      <workItem from="1621583934424" duration="144000" />
     </task>
     <servers />
   </component>
@@ -86,19 +88,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="440" y="169" key="#JSON_Schema_Mappings" timestamp="1606750956138">
-      <screen x="0" y="25" width="1680" height="963" />
-    </state>
-    <state x="440" y="169" key="#JSON_Schema_Mappings/0.25.1680.963/-3200.-695.3200.1775@0.25.1680.963" timestamp="1606750956138" />
-    <state x="627" y="265" key="FileChooserDialogImpl" timestamp="1606474867982">
-      <screen x="0" y="25" width="1680" height="963" />
-    </state>
-    <state x="627" y="265" key="FileChooserDialogImpl/0.25.1680.963/-3200.-695.3200.1775@0.25.1680.963" timestamp="1606474867982" />
-    <state x="349" y="142" key="SettingsEditor" timestamp="1606474725581">
-      <screen x="0" y="25" width="1680" height="963" />
-    </state>
-    <state x="349" y="142" key="SettingsEditor/0.25.1680.963/-3200.-695.3200.1775@0.25.1680.963" timestamp="1606474725581" />
   </component>
 </project>
