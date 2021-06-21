@@ -2,7 +2,9 @@
 modeldef:
     NodeModels:
       - name: Dashboard
-        technology: Dashboard
+        id: Lx-Dashboard
+        category: Supervision app
+        tier: Application
         nature: Software
         NetworklayerElement:
             ElementType: Hub

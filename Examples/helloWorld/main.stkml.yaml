@@ -12,5 +12,7 @@ topology:
 modeldef:
   NodeModels:
     - name: TemperatureSensor
-      technology: Sensor
+      id: Sensor
+      category: Smart sensor
+      tier: Thing
       nature: Hardware

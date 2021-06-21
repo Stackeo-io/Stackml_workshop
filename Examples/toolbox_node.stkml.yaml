@@ -1,7 +1,9 @@
 modeldef:
     NodeModels:
         -   name: heat sensor
-            technology: Sensor
+            id: heat sensor
+            category: Smart sensor
+            tier: Thing
             nature: Hardware
             DatalayerElement:
                 ElementType: EndPoint
@@ -33,27 +35,27 @@ topology:
         -   id: node1
             tier: Thing
             model: heat sensor
-                name: heat sensor
-                technology: Sensor
-                nature: Hardware
-                DatalayerElement:
-                    ElementType: EndPoint
-                    Components:
-                        -   name: SensigDataLayer
-                            nature: Software
-                            role: sense
-                            Workflow:
-                                -   JobId: sensing
-                                    Args:
-                                        -   name: sampleSize
-                                            data:
-                                                size:
-                                                    unit: KB
-                                                    value: 10
+            name: heat sensor
+            technology: Sensor
+            nature: Hardware
+            DatalayerElement:
+                ElementType: EndPoint
+                Components:
+                    -   name: SensigDataLayer
+                        nature: Software
+                        role: sense
+                        Workflow:
+                            -   JobId: sensing
+                                Args:
+                                    -   name: sampleSize
+                                        data:
+                                            size:
+                                                unit: KB
+                                                value: 10
 
-                MessaginglayerElement:
-                    ElementType: EndPoint
-                    Components:
-                        -   name: DirectMessagingLayer
-                            nature: Software
-                            role: render
+            MessaginglayerElement:
+                ElementType: EndPoint
+                Components:
+                    -   name: DirectMessagingLayer
+                        nature: Software
+                        role: render

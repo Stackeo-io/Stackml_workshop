@@ -1,7 +1,9 @@
 modeldef:
     NodeModels:
         - name: Twilio
-          technology: Public Wired Network
+          id: Twilio
+          category: Public WAN
+          tier: Network
           nature: Service
           NetworklayerElement:
             ElementType: Hub

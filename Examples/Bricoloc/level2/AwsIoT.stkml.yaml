@@ -1,34 +1,36 @@
 ---
 modeldef:
     NodeModels:
-        - name: IoTHub
-          technology: IoT Hub
-          nature: Service
-          NetworklayerElement:
-              ElementType: Hub
-              Components:
-                  - name: AWS-Network
-                    nature: Hardware
-                  - name: AWS-App
-                    nature: Hardware
-          ConnectivitylayerElement:
-              ElementType: Hub
-              Components:
-                  - name: AWS-IoT-SSL
-                    nature: Service
-          MessaginglayerElement:
-            ElementType: Hub
-            Components:
-                - name: IOT-Hub
-                  nature: Service
-          DatalayerElement:
-            ElementType: Hub
-            Components:
-                - name: LX-Incyt.io
-                  nature: Service
-          ServicelayerElement:
-            Components:
-                - name: LX-DasboardService
-                  nature: Service
+        -   id: Aws IoT Hub
+            name: IoTHub
+            tier: Application
+            category: IoT hub
+            nature: Service
+            NetworklayerElement:
+                ElementType: Hub
+                Components:
+                    -   name: AWS-Network
+                        nature: Hardware
+                    -   name: AWS-App
+                        nature: Hardware
+            ConnectivitylayerElement:
+                ElementType: Hub
+                Components:
+                    -   name: AWS-IoT-SSL
+                        nature: Service
+            MessaginglayerElement:
+                ElementType: Hub
+                Components:
+                    -   name: IOT-Hub
+                        nature: Service
+            DatalayerElement:
+                ElementType: Hub
+                Components:
+                    -   name: LX-Incyt.io
+                        nature: Service
+            ServicelayerElement:
+                Components:
+                    -   name: LX-DasboardService
+                        nature: Service
 
 

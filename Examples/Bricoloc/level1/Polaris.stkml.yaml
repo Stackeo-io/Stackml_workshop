@@ -2,6 +2,8 @@
 modeldef:
   NodeModels:
     - name: Polaris
-      technology: Edge Computing Node
+      id: Polaris
+      tier: Edge
+      category: Edge computing node
       nature: Hardware
       icon: ../icons/Polaris.png

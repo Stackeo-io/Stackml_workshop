@@ -1,92 +1,94 @@
 ---
 modeldef:
-   NodeModels:
-    - name: Lyra
-      technology: Simple Thing
-      nature: Hardware
-      EnergylayerElement:
-        Components:
-            - name: lyraPower
-              nature: Hardware
-              power:
-                input:
-                  type: battery
+    NodeModels:
+        -   name: Lyra
+            id: Lyra
+            tier: Thing
+            category: Simple thing
+            nature: Hardware
+            EnergylayerElement:
+                Components:
+                    -   name: lyraPower
+                        nature: Hardware
+                        power:
+                            input:
+                                type: battery
 
-      PhysicallayerElement:
-          Components:
-            - name: LyraHardware
-              nature: Hardware
-              cpu:
-                manaufacturer: ARM
-                nbCores: 1
-                busSize: 32
-                frequency: 32
-                version: STM32L152RET6
-              ram:
-                type: slot
-                size:
-                  unit: KB
-                  value: 80
-              os:
-                name: LX OS
-              dimension:
-                unit: mm
-                length: 16.5
-                width: 62.5
-                height: 4
+            PhysicallayerElement:
+                Components:
+                    -   name: LyraHardware
+                        nature: Hardware
+                        cpu:
+                            manaufacturer: ARM
+                            nbCores: 1
+                            busSize: 32
+                            frequency: 32
+                            version: STM32L152RET6
+                        ram:
+                            type: slot
+                            size:
+                                unit: KB
+                                value: 80
+                        os:
+                            name: LX OS
+                        dimension:
+                            unit: mm
+                            length: 16.5
+                            width: 62.5
+                            height: 4
 
-            - name: CoreSensor
-              nature: Hardware
-              Sensor:
-                name: LXSensorArray
-                type:
-                  - Temperature
-                  - Light
-                  - Motion
-                  - Gyroscope
-                  - Humidity
-                  - Magnetometer
-                  - AirPresure
+                    -   name: CoreSensor
+                        nature: Hardware
+                        Sensor:
+                            name: LXSensorArray
+                            type:
+                                - Temperature
+                                - Light
+                                - Motion
+                                - Gyroscope
+                                - Humidity
+                                - Magnetometer
+                                - AirPresure
 
-      NetworklayerElement:
-        ElementType: EndPoint
-        Components:
-            - name: LyraBle
-              nature: Hardware
-              type: BLE
+            NetworklayerElement:
+                ElementType: EndPoint
+                Components:
+                    -   name: LyraBle
+                        nature: Hardware
+                        type: BLE
 
-      ConnectivitylayerElement:
-        ElementType: EndPoint
-        Components:
-            - name: LyraSSL
-              nature: Software
-              protocol:
-                name: TLS
-                version: 1.0.0
+            ConnectivitylayerElement:
+                ElementType: EndPoint
+                Components:
+                    -   name: LyraSSL
+                        nature: Software
+                        protocol:
+                            name: TLS
+                            version: 1.0.0
 
-      DatalayerElement:
-        ElementType: EndPoint
-        Components:
-            - name: LyraDataCollect
-              nature: Software
-              Workflow:
-                - JobId: CollectPossition
-                  Args:
-                    - name: arg1
-                      type: In
-                      data:
-                        size:
-                          value: 50
-                          unit: B
-                        type: Stream
-                - JobId: SendPossition
-                  prec: CollectPossition
-                  Args:
-                    - name: arg1
-                      type: Out
-                      data:
-                        size:
-                          value: 50
-                          unit: B
-                        type: Stream
-      documentation: https://lx-group.com.au/iot-cores/#tabllink-2
+            DatalayerElement:
+                ElementType: EndPoint
+                Components:
+                    -   name: LyraDataCollect
+                        nature: Software
+                        Workflow:
+                            -   JobId: CollectPossition
+                                Args:
+                                    -   name: arg1
+                                        type: In
+                                        data:
+                                            size:
+                                                value: 50
+                                                unit: B
+                                            type: Stream
+                            -   JobId: SendPossition
+                                prec: CollectPossition
+                                Args:
+                                    -   name: arg1
+                                        type: Out
+                                        data:
+                                            size:
+                                                value: 50
+                                                unit: B
+                                            type: Stream
+            documentation: https://lx-group.com.au/iot-cores/#tabllink-2

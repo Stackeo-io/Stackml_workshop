@@ -7,7 +7,7 @@
           <value>
             <SchemaInfo>
               <option name="name" value="stackml schema" />
-              <option name="relativePathToSchema" value="https://stkml.stackeo.io/_static/stackml.schema.json" />
+              <option name="relativePathToSchema" value="../stkml-examples/stackml.schema.json" />
               <option name="patterns">
                 <list>
                   <Item>

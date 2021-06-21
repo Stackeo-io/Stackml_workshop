@@ -1,81 +1,83 @@
 ---
 modeldef:
-  NodeModels:
-    - name: Polaris
-      technology: Edge Computing Node
-      nature: Hardware
-      EnergylayerElement:
-          Components:
-            - name: polarisEnergy
-              nature: Hardware
-              power:
-                input:
-                  type: wired
-                  voltage: 12
-                  amperage: 2
+    NodeModels:
+        -   name: Polaris
+            id: Polaris
+            tier: Edge
+            category: Edge computing node
+            nature: Hardware
+            EnergylayerElement:
+                Components:
+                    -   name: polarisEnergy
+                        nature: Hardware
+                        power:
+                            input:
+                                type: wired
+                                voltage: 12
+                                amperage: 2
 
-      PhysicallayerElement:
-        Components:
-            - name: polarisHardware
-              nature: Hardware
-              cpu:
-                manaufacturer: ARM
-                nbCores: 1
-                busSize: 32
-                frequency: 80
-                version: STM32L452VE
-              operatingTemp:
-                unit: C
-                max: 85
-                min: 40
+            PhysicallayerElement:
+                Components:
+                    -   name: polarisHardware
+                        nature: Hardware
+                        cpu:
+                            manaufacturer: ARM
+                            nbCores: 1
+                            busSize: 32
+                            frequency: 80
+                            version: STM32L452VE
+                        operatingTemp:
+                            unit: C
+                            max: 85
+                            min: 40
 
-      NetworklayerElement:
-        ElementType: Hub
-        Components:
-            - name: polarisBLE
-              nature: Hardware
-              type: BLE
+            NetworklayerElement:
+                ElementType: Hub
+                Components:
+                    -   name: polarisBLE
+                        nature: Hardware
+                        type: BLE
 
-            - name: polarisLTE-M
-              type: LTE-CatM
-              nature: Hardware
+                    -   name: polarisLTE-M
+                        type: LTE-CatM
+                        nature: Hardware
 
-      ConnectivitylayerElement:
-        ElementType: Hub
-        Components:
-            - name: polarisSSL
-              nature: Software
-              protocol:
-                name: TLS
-                version: 1.0.0
-            - name: polarisTwilio
-              nature: Service
-              protocol:
-                name: SSL
-                version: 1.0.0
-      MessaginglayerElement:
-        ElementType: EndPoint
-        Components:
-            - name: polarisBrocker
-              nature: Software
-              pattern: Publisher-Subscriber
-              protocol:
-                name: MQTT
-                version: 1.4.0
+            ConnectivitylayerElement:
+                ElementType: Hub
+                Components:
+                    -   name: polarisSSL
+                        nature: Software
+                        protocol:
+                            name: TLS
+                            version: 1.0.0
+                    -   name: polarisTwilio
+                        nature: Service
+                        protocol:
+                            name: SSL
+                            version: 1.0.0
+            MessaginglayerElement:
+                ElementType: EndPoint
+                Components:
+                    -   name: polarisBrocker
+                        nature: Software
+                        pattern: Publisher-Subscriber
+                        protocol:
+                            name: MQTT
+                            version: 1.4.0
 
-      DatalayerElement:
-        ElementType: EndPoint
-        Components:
-            - name: polarisProcess
-              nature: Software
-              Workflow:
-                - JobId: polarisProcess1
-                  Args:
-                    - name: arg1
-                      type: In
-                      data:
-                        size:
-                          value: 50
-                          unit: B
-                        type: Stream
-      documentation: https://fortebit.tech/docs/manuals/polaris/
+            DatalayerElement:
+                ElementType: EndPoint
+                Components:
+                    -   name: polarisProcess
+                        nature: Software
+                        Workflow:
+                            -   JobId: polarisProcess1
+                                Args:
+                                    -   name: arg1
+                                        type: In
+                                        data:
+                                            size:
+                                                value: 50
+                                                unit: B
+                                            type: Stream
+            documentation: https://fortebit.tech/docs/manuals/polaris/

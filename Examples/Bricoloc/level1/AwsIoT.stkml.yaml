@@ -1,7 +1,9 @@
 ---
 modeldef:
-  NodeModels:
-    - name: IoTHub
-      technology: IoT Hub
-      nature: Service
-      icon: ../icons/IoTHub.png
+    NodeModels:
+        -   id: Aws IoT Hub
+            name: IoTHub
+            tier: Application
+            category: IoT hub
+            nature: Service
+            icon: ../icons/IoTHub.png

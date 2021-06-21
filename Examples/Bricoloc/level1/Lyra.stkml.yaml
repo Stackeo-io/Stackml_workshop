@@ -1,7 +1,9 @@
 ---
 modeldef:
-  NodeModels:
-    - name: Lyra
-      technology: Simple Thing
-      nature: Hardware
-      icon: ../icons/Lyra.png
+    NodeModels:
+        -   name: Lyra
+            id: Lyra
+            tier: Thing
+            category: Simple thing
+            nature: Hardware
+            icon: ../icons/Lyra.png

@@ -1,6 +1,8 @@
 modeldef:
     NodeModels:
-        - name: Twilio
-          technology: Public Wired Network
-          nature: Service
-          icon: ../icons/Twilio.png
+        -   name: Twilio
+            id: Twilio
+            tier: Network
+            category: Public WAN
+            nature: Service
+            icon: ../icons/Twilio.png
